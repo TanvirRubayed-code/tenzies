@@ -1,0 +1,74 @@
+main {
+  background-color: #f5f5f5;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.dice-container button {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border: none;
+  background-color: white;
+  font-size: 1.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.roll {
+  height: 50px;
+  width: 120px;
+  border-radius: 6px;
+  background-color: #5035ff;
+  color: white;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+.roll:focus{
+  border: 1px solid #5035ff;
+
+}
+
+.clicked{
+  background-color: #3d21f3;
+}
+
+.instructions {
+  color: gray;
+  text-align: center;
+
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* @media (max-width: 65vh) {
+  main {
+    width: 40vh;
+    height: 40vh;
+  }
+} */
